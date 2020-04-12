@@ -1,4 +1,6 @@
-
+/**
+ * Created by qile on 2017/8/14.
+ */
 //函数定义 函数声明方式
 function max(a,b){
     return a>b?a:b;

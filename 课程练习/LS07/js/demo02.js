@@ -1,4 +1,7 @@
-
+/**
+ * Created by qile on 2017/8/14.
+ */
+//Part 11111111111111111111
 //普通函数直接调用
 function test1() {
     console.log("this is",this);

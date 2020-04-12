@@ -1,12 +1,14 @@
-
+/**
+ * Created by qile on 2017/8/14.
+ */
 //实参数大于形参数
 function test() {
     console.log(arguments);
     console.log(test.arguments==arguments,arguments);
-    console.log(arguments.length);
-	console.log(typeof arguments);
-	console.log(arguments instanceof Array);//false
-	console.log(arguments instanceof Object);
+    // console.log(arguments.length);
+	// console.log(typeof arguments);
+	// console.log(arguments instanceof Array);//false
+	// console.log(arguments instanceof Object);
     console.log(Array.prototype.slice.call(arguments));
     var s = "";
     for (var i = 0; i < arguments.length; i++) {
@@ -23,6 +25,6 @@ var sum = function(a,b,c){
     c = c||5;
     return a+b+c;
 };
-console.log(sum(1,2,3));//6
-console.log(sum(1,2));//8
-console.log(sum(1));//10
+console.log(sum(1,2,3));
+console.log(sum(1,2));
+console.log(sum(1));

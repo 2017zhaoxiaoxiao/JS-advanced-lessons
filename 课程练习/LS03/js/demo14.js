@@ -1,9 +1,13 @@
+/**
+ * Created by qile on 2017/8/14.
+ */
 
+//Part 000000000
 //字符串比较
-console.log("A" > "a");//false
-console.log("B".localeCompare("A")); //1
-console.log("A".localeCompare("A")); //0
-console.log("A".localeCompare("B"));//-1
+console.log("A" > "a");
+console.log("B".localeCompare("A")); //考虑本地化的字符排序，返回0或非0
+console.log("A".localeCompare("A")); //考虑本地化的字符排序，返回0或非0
+console.log("A".localeCompare("B"));
 
 //字符串链接
 var a = "abc";
@@ -37,10 +41,10 @@ var str12 = "abcdefabcdef".indexOf("d",4);//从第4个开始找
 //substr 与 substring的区别
 var str13 = "abcdefghijklmn";
 var str14 = str13.substr(2,5);//后一个参数代表长度
-console.log(str13,str14);//abcdefghijklmn cdefg    str13 未受到破坏
+console.log(str13,str14);//str13 未受到破坏
 
 var str15 = str13.substring(2,5);//后一个参数代表第几个end
-console.log(str13,str15);//abcdefghijklmn cde    str13 未受到破坏
+console.log(str13,str15);//str13 未受到破坏
 
 
 
@@ -68,3 +72,4 @@ var lastIndexOf = "abcDEFabcDEFabcDEF".lastIndexOf("D");
 //String.prototype.match(regexp);
 //String.prototype.replace(regexp);
 
+//其余部分参见《深入理解JS》第12章
